@@ -1,0 +1,133 @@
+
+Loading data...
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000000 entries, 0 to 999999
+Data columns (total 117 columns):
+ #    Column                                     Non-Null Count    Dtype  
+---   ------                                     --------------    -----  
+ 0    date                                       1000000 non-null  int64  
+ 1    country_name                               1000000 non-null  int64  
+ 2    iso_3166_1_alpha_2                         1000000 non-null  int64  
+ 3    new_confirmed                              1000000 non-null  float64
+ 4    new_deceased                               489827 non-null   float64
+ 5    cumulative_confirmed                       520689 non-null   float64
+ 6    cumulative_deceased                        478235 non-null   float64
+ 7    cumulative_tested                          160633 non-null   float64
+ 8    new_persons_vaccinated                     53319 non-null    float64
+ 9    cumulative_persons_vaccinated              50472 non-null    float64
+ 10   new_persons_fully_vaccinated               107554 non-null   float64
+ 11   cumulative_persons_fully_vaccinated        107535 non-null   float64
+ 12   new_vaccine_doses_administered             53733 non-null    float64
+ 13   cumulative_vaccine_doses_administered      51018 non-null    float64
+ 14   population                                 923680 non-null   float64
+ 15   population_male                            686480 non-null   float64
+ 16   population_female                          686480 non-null   float64
+ 17   population_rural                           12843 non-null    float64
+ 18   population_urban                           12843 non-null    float64
+ 19   population_density                         64866 non-null    float64
+ 20   human_development_index                    193079 non-null   float64
+ 21   population_age_00_09                       664977 non-null   float64
+ 22   population_age_10_19                       664923 non-null   float64
+ 23   population_age_20_29                       664916 non-null   float64
+ 24   population_age_30_39                       665416 non-null   float64
+ 25   population_age_40_49                       665051 non-null   float64
+ 26   population_age_50_59                       663980 non-null   float64
+ 27   population_age_60_69                       662802 non-null   float64
+ 28   population_age_70_79                       657456 non-null   float64
+ 29   population_age_80_and_older                647587 non-null   float64
+ 30   gdp_usd                                    22051 non-null    float64
+ 31   gdp_per_capita_usd                         21398 non-null    float64
+ 32   area_sq_km                                 835168 non-null   float64
+ 33   smoking_prevalence                         8813 non-null     float64
+ 34   diabetes_prevalence                        12595 non-null    float64
+ 35   infant_mortality_rate                      11643 non-null    float64
+ 36   nurses_per_1000                            10867 non-null    float64
+ 37   physicians_per_1000                        9918 non-null     float64
+ 38   health_expenditure_usd                     11247 non-null    float64
+ 39   out_of_pocket_health_expenditure_usd       11247 non-null    float64
+ 40   school_closing                             17917 non-null    float64
+ 41   workplace_closing                          17904 non-null    float64
+ 42   cancel_public_events                       17897 non-null    float64
+ 43   restrictions_on_gatherings                 17892 non-null    float64
+ 44   public_transport_closing                   17873 non-null    float64
+ 45   stay_at_home_requirements                  17893 non-null    float64
+ 46   restrictions_on_internal_movement          17888 non-null    float64
+ 47   international_travel_controls              17792 non-null    float64
+ 48   income_support                             17100 non-null    float64
+ 49   debt_relief                                17088 non-null    float64
+ 50   fiscal_measures                            8848 non-null     float64
+ 51   international_support                      8839 non-null     float64
+ 52   public_information_campaigns               17884 non-null    float64
+ 53   testing_policy                             17800 non-null    float64
+ 54   contact_tracing                            17664 non-null    float64
+ 55   emergency_investment_in_healthcare         9060 non-null     float64
+ 56   investment_in_vaccines                     13983 non-null    float64
+ 57   facial_coverings                           17864 non-null    float64
+ 58   vaccination_policy                         17836 non-null    float64
+ 59   stringency_index                           17866 non-null    float64
+ 60   average_temperature_celsius                953404 non-null   float64
+ 61   rainfall_mm                                948539 non-null   float64
+ 62   snowfall_mm                                34785 non-null    float64
+ 63   relative_humidity                          953121 non-null   float64
+ 64   new_tested                                 171545 non-null   float64
+ 65   population_largest_city                    9120 non-null     float64
+ 66   population_clustered                       7246 non-null     float64
+ 67   human_capital_index                        9287 non-null     float64
+ 68   area_rural_sq_km                           10796 non-null    float64
+ 69   area_urban_sq_km                           10796 non-null    float64
+ 70   life_expectancy                            128472 non-null   float64
+ 71   adult_male_mortality_rate                  11340 non-null    float64
+ 72   adult_female_mortality_rate                11340 non-null    float64
+ 73   pollution_mortality_rate                   10999 non-null    float64
+ 74   comorbidity_mortality_rate                 10999 non-null    float64
+ 75   mobility_retail_and_recreation             193251 non-null   float64
+ 76   mobility_grocery_and_pharmacy              184745 non-null   float64
+ 77   mobility_parks                             147332 non-null   float64
+ 78   mobility_transit_stations                  155721 non-null   float64
+ 79   mobility_workplaces                        274699 non-null   float64
+ 80   mobility_residential                       193330 non-null   float64
+ 81   hospital_beds_per_1000                     1384 non-null     float64
+ 82   cumulative_recovered                       217335 non-null   float64
+ 83   elevation_m                                702810 non-null   float64
+ 84   new_hospitalized_patients                  83676 non-null    float64
+ 85   cumulative_hospitalized_patients           83458 non-null    float64
+ 86   new_intensive_care_patients                54250 non-null    float64
+ 87   cumulative_intensive_care_patients         54118 non-null    float64
+ 88   new_confirmed_male                         176124 non-null   float64
+ 89   new_confirmed_female                       176037 non-null   float64
+ 90   cumulative_confirmed_male                  189154 non-null   float64
+ 91   cumulative_confirmed_female                189127 non-null   float64
+ 92   new_deceased_male                          101364 non-null   float64
+ 93   new_deceased_female                        100564 non-null   float64
+ 94   cumulative_deceased_male                   110232 non-null   float64
+ 95   cumulative_deceased_female                 110205 non-null   float64
+ 96   new_tested_male                            106954 non-null   float64
+ 97   new_tested_female                          106660 non-null   float64
+ 98   cumulative_tested_male                     108197 non-null   float64
+ 99   cumulative_tested_female                   108197 non-null   float64
+ 100  new_hospitalized_patients_male             60284 non-null    float64
+ 101  new_hospitalized_patients_female           59847 non-null    float64
+ 102  cumulative_hospitalized_patients_male      62539 non-null    float64
+ 103  cumulative_hospitalized_patients_female    62512 non-null    float64
+ 104  new_intensive_care_patients_male           41792 non-null    float64
+ 105  new_intensive_care_patients_female         38321 non-null    float64
+ 106  cumulative_intensive_care_patients_male    51431 non-null    float64
+ 107  cumulative_intensive_care_patients_female  51431 non-null    float64
+ 108  current_hospitalized_patients              10383 non-null    float64
+ 109  current_intensive_care_patients            10897 non-null    float64
+ 110  current_ventilator_patients                2777 non-null     float64
+ 111  new_recovered_male                         122406 non-null   float64
+ 112  new_recovered_female                       122206 non-null   float64
+ 113  cumulative_recovered_male                  125804 non-null   float64
+ 114  cumulative_recovered_female                125804 non-null   float64
+ 115  new_ventilator_patients                    696 non-null      float64
+ 116  cumulative_ventilator_patients             539 non-null      float64
+dtypes: float64(114), int64(3)
+memory usage: 892.6 MB
+None
+
+Training models...
+
+Training time: 585.6923 seconds
+Accuracy: 0.68435

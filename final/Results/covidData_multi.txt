@@ -1,0 +1,55 @@
+
+Loading data...
+
+  Breathing Problem Fever Dry Cough Sore throat Running Nose Asthma  ... Attended Large Gathering Visited Public Exposed Places Family working in Public Exposed Places Wearing Masks Sanitization from Market COVID-19
+0               Yes   Yes       Yes         Yes          Yes     No  ...                       No                           Yes                                     Yes            No                       No      Yes
+1               Yes   Yes       Yes         Yes           No    Yes  ...                      Yes                           Yes                                      No            No                       No      Yes
+2               Yes   Yes       Yes         Yes          Yes    Yes  ...                       No                            No                                      No            No                       No      Yes
+3               Yes   Yes       Yes          No           No    Yes  ...                      Yes                           Yes                                      No            No                       No      Yes
+4               Yes   Yes       Yes         Yes          Yes     No  ...                       No                           Yes                                      No            No                       No      Yes
+
+[5 rows x 21 columns]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5434 entries, 0 to 5433
+Data columns (total 21 columns):
+ #   Column                                   Non-Null Count  Dtype 
+---  ------                                   --------------  ----- 
+ 0   Breathing Problem                        5434 non-null   object
+ 1   Fever                                    5434 non-null   object
+ 2   Dry Cough                                5434 non-null   object
+ 3   Sore throat                              5434 non-null   object
+ 4   Running Nose                             5434 non-null   object
+ 5   Asthma                                   5434 non-null   object
+ 6   Chronic Lung Disease                     5434 non-null   object
+ 7   Headache                                 5434 non-null   object
+ 8   Heart Disease                            5434 non-null   object
+ 9   Diabetes                                 5434 non-null   object
+ 10  Hyper Tension                            5434 non-null   object
+ 11  Fatigue                                  5434 non-null   object
+ 12  Gastrointestinal                         5434 non-null   object
+ 13  Abroad travel                            5434 non-null   object
+ 14  Contact with COVID Patient               5434 non-null   object
+ 15  Attended Large Gathering                 5434 non-null   object
+ 16  Visited Public Exposed Places            5434 non-null   object
+ 17  Family working in Public Exposed Places  5434 non-null   object
+ 18  Wearing Masks                            5434 non-null   object
+ 19  Sanitization from Market                 5434 non-null   object
+ 20  COVID-19                                 5434 non-null   object
+dtypes: object(21)
+memory usage: 891.6+ KB
+None
+   Breathing Problem  Fever  Dry Cough  Sore throat  Running Nose  ...  Visited Public Exposed Places  Family working in Public Exposed Places  Wearing Masks  Sanitization from Market  COVID-19
+0                  1      1          1            1             1  ...                              1                                        1              0                         0         1
+1                  1      1          1            1             0  ...                              1                                        0              0                         0         1
+2                  1      1          1            1             1  ...                              0                                        0              0                         0         1
+3                  1      1          1            0             0  ...                              1                                        0              0                         0         1
+4                  1      1          1            1             1  ...                              1                                        0              0                         0         1
+
+[5 rows x 21 columns]
+
+Training Models...
+
+Training time: 0.40819358825683594
+Overall Accuracy: 0.283609576427256
+Testing time: 0.0071 seconds
+Predicted Disease Present: Yes
